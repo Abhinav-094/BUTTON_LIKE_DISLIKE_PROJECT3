@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            var count = 0;
+                 var count1 = 0;
+
+            $("#likebtn").click(function()
+            {
+                 
+                 count++;
+                $("#zeropoint1").text (count)
+            })
+             $("#dislikebtn").click(function()
+            {
+                 count1++;
+                $("#zeropoint2").text (count1)
+            })
+        })
+    </script>
+    <style>
+      #image
+      {
+         width: 350px;
+         height: 200px;
+         position: relative;
+         left: 500px;
+         top: 100px;
+      }
+      #likebtn
+      {
+         position: relative;
+         top: 180px;
+         left: 145px;
+      }
+      #dislikebtn
+      {
+         position: relative;
+         top: 180px;
+         left: 350px;
+      }
+    </style>
+</head>
+<body>
+    <img id="image" src="https://static.vecteezy.com/system/resources/thumbnails/049/855/347/small_2x/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg">
+    <button id="likebtn"><img src="./IMG/LIKEBTN.jpg" width="50px" height="50px"><span id="zeropoint1">0</span></button>
+    <button id="dislikebtn"> <img src="./IMG/DISLIKEBTN.jpg" width="50px" height="50px"><span id="zeropoint2">0</span></button>
+</body>
+</html>
